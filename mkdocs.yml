@@ -1,0 +1,44 @@
+site_name: LunaID
+site_url: https://visionlabs.github.io/LunaID/
+repo_url: https://visionlabs.github.io/LunaID/
+
+nav:
+  - Home: index.md 
+  - About: about.md
+# theme: 
+#   name: mkdocs
+theme:
+    name: material
+    features:
+        - navigation.top
+
+
+# strict: true
+
+dev_addr: '127.0.0.1:9876'
+
+
+markdown_extensions:
+  - smarty
+  - sane_lists
+  - nl2br
+
+
+plugins:
+  - mike:
+      # dev_addr: '127.0.0.1:9876'
+    # These fields are all optional; the defaults are as below...
+    # css_dir: css
+      # alias_type: copy
+    # redirect_template: null
+    # deploy_prefix: ''
+    # canonical_version: null
+    # version_selector: true
+    # css_dir: css
+    # javascript_dir: js
+
+
+extra:
+  version:
+    provider: mike
+    default: latest
