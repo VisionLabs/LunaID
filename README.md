@@ -36,7 +36,7 @@ and then use `mike` or `mkdocs`.
 
 ```sh
 mike serve --dev-addr '127.0.0.1:9876'
-mike deploy --update-aliases --no-redirect {version} latest
+mike deploy --update-aliases {version} latest
 ```
 
 
@@ -51,7 +51,7 @@ git checkout -b {next_version}
 update docs and deploy it.
 
 ```sh
-mike deploy --push --update-aliases --no-redirect {next_version} latest
+mike deploy --push --update-aliases {next_version} latest
 ```
 
 
