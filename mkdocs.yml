@@ -1,6 +1,6 @@
 site_name: LunaID
-site_url: https://visionlabs.github.io/LunaID/
-repo_url: https://visionlabs.github.io/LunaID/
+site_url: https://visionlabs.github.io/LunaID/latest
+repo_url: https://github.com/VisionLabs/LunaID/
 
 nav:
   - Home: index.md 
