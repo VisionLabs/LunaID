@@ -4,7 +4,9 @@ repo_url: https://github.com/VisionLabs/LunaID/
 
 nav:
   - Home: index.md 
-  - About: about.md
+  - FAQ: faq.md
+  - Changelog: changelog.md
+
 # theme: 
 #   name: mkdocs
 theme:
