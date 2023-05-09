@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# LunaID SDK
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Примеры использования и интеграции `LunaID SDK` доступны публично на [github](https://github.com/VisionLabs/LunaID-Android-Examples).
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Ответы на основные вопросы по использованию и внедрению `LunaID SDK` можно найти в разделе [FAQ](/faq/).
