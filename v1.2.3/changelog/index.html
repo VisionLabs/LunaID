@@ -8,25 +8,22 @@
       
       
       
-        <link rel="canonical" href="https://visionlabs.github.io/LunaID/latest/v1.2.3/about/">
+        <link rel="canonical" href="https://visionlabs.github.io/LunaID/latest/v1.2.3/changelog/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../faq/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
     
     
       
-        <title>About - LunaID</title>
+        <title>Changelog - LunaID</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
       
       
 
@@ -52,19 +49,21 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -101,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Changelog
             
           </span>
         </div>
@@ -191,6 +190,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -199,10 +213,64 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        About
+        Changelog
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v123" class="md-nav__link">
+    v1.2.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v122" class="md-nav__link">
+    v1.2.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    1.2.0
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -225,6 +293,44 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v123" class="md-nav__link">
+    v1.2.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v122" class="md-nav__link">
+    v1.2.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    1.2.0
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -242,9 +348,28 @@
   
 
 
-  <h1>About</h1>
-
-
+<h1 id="changelog">Changelog</h1>
+<h3 id="v123">v1.2.3</h3>
+<ul>
+<li>минорный фикс WebAPI</li>
+<li>рефакторинг работы с камерой, чтобы сделать ее независимой от жизненного цикла вызывающего кода</li>
+</ul>
+<h3 id="v122">v1.2.2</h3>
+<ul>
+<li>фикс для опциональной проверки online-liveness во время получения бестшота</li>
+</ul>
+<h3 id="121">1.2.1</h3>
+<ul>
+<li>фикс для просроченной лицензии</li>
+</ul>
+<h3 id="120">1.2.0</h3>
+<ul>
+<li>минорные фиксы WebAPI</li>
+<li>новое WebApi, более точно совпадающее с Platform API</li>
+<li>новый пример как использовать WebAPI</li>
+<li>поддержка опциональной генерации дескрипторов на девайсе</li>
+<li>поддержка опциональной интеракции (моргнуть)</li>
+</ul>
 
 
 
@@ -290,7 +415,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
       
     
   </body>
