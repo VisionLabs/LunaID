@@ -2,6 +2,9 @@
 # Changelog
 
 
+### v1.3.3
+- add optional logging to file
+
 ### v1.3.2
 - explicitly forbid to call `LunaID.init()` twice during Application's life-cycle.
 
