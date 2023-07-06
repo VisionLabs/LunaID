@@ -2,6 +2,11 @@
 # Changelog
 
 
+### 1.4.0
+- interaction messages can be customized same way like error messages. Interaction events can be intercepted via `CameraOverlayDelegateOut.receive`.
+- interaction can be enabled for every bestshot detection session via `LunaID.showCamera()` (instead of `LunaID.init()`)
+- (minor) `LunaID.showCamera()` from now on accepts `ShowCameraParams` with all available params.
+
 ### v1.3.3
 - add optional logging to file
 
