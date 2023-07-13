@@ -1,4 +1,70 @@
 
+#### Disabling OneShotLiveness estimation
+If you want to perform only local estimations over the best shot, you can disable OneShotLiveness estimation.
+
+To disable OneShotLiveness estimation in LUNA ID for Android, add the `onlineLivenessSettings` argument of the `LivenessSettings` type in the `init` method of the `LunaID` class: `LunaID.init(onlineLivenessSettings: LivenessSettings).`
+The `onlineLivenessSettings` argument can have the following values:
+LunaID.init(LivenessSettingsAlwaysDisabled: LivenessSettings) - Disables OneShotLiveness estimation.
+LunaID.init(LivenessSettingsAlwaysEnabled: LivenessSettings) - Enables OneShotLiveness estimation.
+If you want to dynamically determine if the OneShotLiveness estimation is enabled, you must implement an interface for `LivenessSettings`.
+If the argument in `LunaID.init()` is not set, then the default value is `LivenessSettingsAlwaysDisabled`.
+
+#### Saving logs on an end user’s device
+
+With LUNA ID, you can optionally save log files on an end user’s device. This feature is available in LUNA ID for Android v. 1.3.3 and later.
+To get log files and save them on your device:
+Enable logging in LUNA ID:
+`LunaID.showCamera(logToFile = true)`
+Every call of showCamera with logToFile  set to true will create a log file with a session of getting the best shot on your mobile device.
+Get the log files by calling Context#getFilesDir(). The files are stored in the logs folder inside your app’s private folder. For details, see getFileDir. 
+We do not provide a solution for getting log files from your device. You need to realize it in your code by yourself. That is, you will need to add logic for getting these log files and sending them, for example, to your endpoint or to your mail.
+ 
+We recommend that you do the following to get logs from your device:
+In your app, realize hidden camera launching with collecting of logs. For example, you can do it by long-tapping the camera button or via the hidden developer menu in the release build.
+When a user has a problem getting the best shot, you get the logs and forward them to our Support Team. 
+ 
+
+#### Interception of Dynamic Liveness interaction events
+
+You can intercept interaction events via CameraOverlayDelegateOut.receive.
+You will receive structure similar to the "error" and "detection" events:
+{
+"action": "interaction",
+"state": ...
+}
+Where `state` is an object of the LunaInteraction class.
+
+
+```
+public enum class LunaInteraction {
+   INTERACTION_FAILED,
+   INTERACTION_STARTED,
+
+   INTERACTION_EYES_OPENED,
+   INTERACTION_EYES_CLOSED,
+   INTERACTION_EYES_OPENED_AGAIN,
+
+   INTERACTION_SUCCESS
+}
+```
+
+
+Just like with errors based on this state, you can control how interaction messages will look like.
+
+
+#### Customizing Dynamic Liveness notifications
+You can customize messages that are shown when a user performs blinking to fulfill the Dynamic Liveness estimation. For example, you can change:
+* Notification language
+* Fonts
+* Font colors
+* Background colors
+
+To do this, in LUNA ID for Android:
+Call LunaID.showCamera() with ShowCameraParams(disableInteractionTips=true).
+Subscribe to CameraOverlayDelegateOut.receive to receive interaction events.
+Implement your own camera overlay. For an example of creating an overlay, see LUNA ID Android Examples.
+Use the overlay to implement any logic to show or hide customized interaction tips wherever you like.
+
 
 #### как добавить в зависимость aar
 Пример ниже описанного можно посмотреть в `CameraExample`.
@@ -430,4 +496,10 @@ LunaID.showCamera(
 
 `Luna ID SDK` не управляет этими файлами, предполагается, что управление этими файлами (удалять, копировать, отправлять на сервер) является ответственностью вызывающей стороны.
 
+
+#### Recording a video stream only with the face detected
+
+With LUNA ID, you can record either entire video sessions or only video sessions in which a face was detected in at least one frame. 
+
+To do this, in LUNA ID for Android, call LunaID.showCamera() with ShowCameraParams(recordVideo=true, ignoreVideoWithoutFace=true).
 
