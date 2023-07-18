@@ -1,6 +1,8 @@
 
 # Changelog
 
+### 1.4.1
+- Fix crash on few Xiaomi devices due to bug in MIUI.
 
 ### 1.4.0
 - interaction messages can be customized same way like error messages. Interaction events can be intercepted via `CameraOverlayDelegateOut.receive`.
