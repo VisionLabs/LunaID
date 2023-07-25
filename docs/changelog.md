@@ -1,6 +1,9 @@
 
 # Changelog
 
+### 1.4.2
+- Fix occasional crashes
+
 ### 1.4.1
 - Fix crash on few Xiaomi devices due to bug in MIUI.
 
