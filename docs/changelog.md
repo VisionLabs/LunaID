@@ -1,6 +1,9 @@
 
 # Changelog
 
+### 1.4.3
+- Fix face detection freezes on few Xiaomi devices.
+
 ### 1.4.2
 - Fix occasional crashes
 
