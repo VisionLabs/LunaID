@@ -3,6 +3,7 @@
 
 ### 1.4.3
 - Fix face detection freezes on few Xiaomi devices.
+- Fix occasional crash on face detection start due to race condition.
 
 ### 1.4.2
 - Fix occasional crashes
