@@ -1,6 +1,9 @@
 
 # Changelog
 
+### 1.4.4
+- фикс кейса, когда детекция лица происходит с задержкой после открытия камеры. 
+
 ### 1.4.3
 - Fix face detection freezes on few Xiaomi devices.
 - Fix occasional crash on face detection start due to race condition.
