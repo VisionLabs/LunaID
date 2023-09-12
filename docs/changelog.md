@@ -1,6 +1,9 @@
 
 # Changelog
 
+### 1.4.5
+- Fix regression bug. Occasional crash due to interaction flow bug even when interaction is disabled.
+
 ### 1.4.4
 - фикс кейса, когда детекция лица происходит с задержкой после открытия камеры. 
 
