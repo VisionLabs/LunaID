@@ -1,6 +1,19 @@
 
 # Changelog
 
+### 1.5.0
+New features:
+- Поддержка нескольких типов интеракций:
+* поворот головы направо
+* поворот головы налево
+* наклон головы вверх
+* наклон головы вниз
+* мограние
+
+This release introduces some breaking changes to API.
+Please read this document to get familiar with them and change your code accordingly: [migration guild](/LunaID/1.5.0/migragion/)
+
+
 ### 1.4.5
 - Fix regression bug. Occasional crash due to interaction flow bug even when interaction is disabled.
 
