@@ -51,6 +51,7 @@ git checkout -b {next_version}
 update docs and deploy it.
 
 ```sh
+git push
 mike deploy --push --update-aliases {next_version} latest
 ```
 
