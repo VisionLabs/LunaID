@@ -1,11 +1,14 @@
 ### 1.5.0
 
-Whole flow of LunaID camera's now exposed through LunaID.allEvents(). User can subscribe to it to catch all events. 
-Or subscribe to specific events.
+Whole flow of LunaID camera's now exposed through LunaID.allEvents(). User can subscribe to it to catch all events.  Or subscribe to specific events.
 For example:
+
 * LunaID.finishStates()
+
 * LunaID.detectionCoordinates()
+
 * LunaID.detectionErrors()
+
 * LunaID.interactions()
 
 

@@ -4,4 +4,4 @@
 
 Ответы на основные вопросы по использованию и внедрению `LunaID SDK` можно найти в разделе [FAQ](/LunaID/latest/faq/).
 
-Изменения api доступны по [этой ссылке](/LunaID/latest/migration/]).
+Изменения api доступны по [этой ссылке](/LunaID/latest/migration/).
